@@ -279,6 +279,12 @@ button:hover:before {
   visibility: visible;
 }
 
+@media (min-width: 64em) {
+  .header.open .overlay {
+    display: none;
+  }
+}
+
 .header .overlay {
   position: fixed;
   visibility: hidden;
@@ -360,6 +366,12 @@ button:hover:before {
   top: 5.0625rem;
   border-radius: 0.375rem;
   z-index: 999;
+}
+
+@media (min-width: 64em) {
+  .header-menu-mobile {
+    display: none;
+  }
 }
 
 .header-menu-mobile a {

@@ -26,6 +26,11 @@
     }
     .overlay{
         visibility: visible;
+
+        @include breakpoint-up(large){
+            display: none;
+        }
+        
     }
     }
 
@@ -110,6 +115,10 @@
         top: 5.0625rem;
         border-radius: 0.375rem;
         z-index: 999;
+
+        @include breakpoint-up(large){
+            display: none;
+        }
 
         a{
             display: block;
